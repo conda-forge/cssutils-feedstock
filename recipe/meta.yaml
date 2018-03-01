@@ -1,6 +1,6 @@
 {% set name = "cssutils" %}
-{% set version = "1.0.1" %}
-{% set sha256 = "d8a18b2848ea1011750231f1dd64fe9053dbec1be0b37563c582561e7a529063" %}
+{% set version = "1.0.2" %}
+{% set sha256 = "a2fcf06467553038e98fea9cfe36af2bf14063eb147a70958cfcaa8f5786acaf" %}
 
 package:
   name: {{ name }}
