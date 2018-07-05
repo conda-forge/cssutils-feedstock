@@ -14,14 +14,15 @@ Summary: A CSS Cascading Style Sheets library for Python
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/cssutils-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/cssutils-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/cssutils-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/cssutils-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/cssutils-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/cssutils-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/cssutils-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/cssutils-feedstock)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cssutils/badges/version.svg)](https://anaconda.org/conda-forge/cssutils)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/cssutils/badges/downloads.svg)](https://anaconda.org/conda-forge/cssutils)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cssutils-green.svg)](https://anaconda.org/conda-forge/cssutils) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cssutils.svg)](https://anaconda.org/conda-forge/cssutils) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cssutils.svg)](https://anaconda.org/conda-forge/cssutils) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cssutils.svg)](https://anaconda.org/conda-forge/cssutils) |
 
 Installing cssutils
 ===================
