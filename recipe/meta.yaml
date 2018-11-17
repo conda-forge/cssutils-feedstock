@@ -12,14 +12,14 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1000
-  script: python setup.py install --single-version-externally-managed --record=record.txt
+  number: 1000 
+  script: python setup.py install --single-version-externally-managed --record=record.txt   # [py <= 30]
+  script: python setup3.py install --single-version-externally-managed --record=record.txt  # [py > 30]
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
-
   run:
     - python
 
