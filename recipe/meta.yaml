@@ -14,7 +14,7 @@ source:
 build:
   noarch: python
   number: 1000 
-  script: script: "{{ PYTHON }} -m pip install . -vv"
+  script: "{{ PYTHON }} -m pip install . -vv"
 
 requirements:
   host:
