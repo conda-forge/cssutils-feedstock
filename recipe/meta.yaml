@@ -1,6 +1,6 @@
 {% set name = "cssutils" %}
-{% set version = "1.0.2" %}
-{% set sha256 = "a2fcf06467553038e98fea9cfe36af2bf14063eb147a70958cfcaa8f5786acaf" %}
+{% set version = "2.1.0" %}
+{% set sha256 = "9ddd09f18961fd98affc0c05331572235326577056b8cf72f341dfe38f2e1218" %}
 
 package:
   name: {{ name }}
@@ -13,8 +13,8 @@ source:
 
 build:
   noarch: python
-  number: 1000 
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -30,6 +30,11 @@ test:
 about:
   home: http://cthedot.de/cssutils/
   license: LGPL3
+  license_file: 
+    - COPYING 
+    - COPYING.LESSER 
+    - LICENSE 
+
   summary: A CSS Cascading Style Sheets library for Python
 
 extra:
