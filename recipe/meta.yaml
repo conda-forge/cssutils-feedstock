@@ -1,6 +1,6 @@
 {% set name = "cssutils" %}
-{% set version = "2.2.0" %}
-{% set sha256 = "5bef59f6b59bdccbea8e36cb292d2be1b6be1b485fc4a9f5886616f19eb31aaf" %}
+{% set version = "2.3.0" %}
+{% set sha256 = "b2d3b16047caae82e5c590036935bafa1b621cf45c2f38885af4be4838f0fd00" %}
 
 package:
   name: {{ name }}
@@ -30,9 +30,9 @@ test:
 about:
   home: http://cthedot.de/cssutils/
   license: LGPL-3.0-only
-  license_file: 
-    - COPYING 
-    - COPYING.LESSER 
+  license_file:
+    - COPYING
+    - COPYING.LESSER
 
   summary: A CSS Cascading Style Sheets library for Python
 
