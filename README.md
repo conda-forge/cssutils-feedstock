@@ -3,7 +3,7 @@ About cssutils
 
 Home: http://cthedot.de/cssutils/
 
-Package license: LGPL3
+Package license: LGPL-3.0-only
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cssutils-feedstock/blob/master/LICENSE.txt)
 
@@ -36,6 +36,7 @@ Installing `cssutils` from the `conda-forge` channel can be achieved by adding `
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `cssutils` can be installed with:
