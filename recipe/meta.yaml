@@ -1,6 +1,6 @@
 {% set name = "cssutils" %}
-{% set version = "2.4.0" %}
-{% set sha256 = "2d97210a83b0a3fe1e4469f5ff9a6420b078572035188b1bab7103c3a36dc89b" %}
+{% set version = "2.4.1" %}
+{% set sha256 = "f8689c6fae934cb6a7077c7066f2c6026c0e90de7ad30a816b3f6d59a138d638" %}
 
 package:
   name: {{ name }}
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
