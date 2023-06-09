@@ -1,11 +1,11 @@
-About cssutils
-==============
+About cssutils-feedstock
+========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cssutils-feedstock/blob/main/LICENSE.txt)
 
 Home: http://cthedot.de/cssutils/
 
 Package license: LGPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cssutils-feedstock/blob/main/LICENSE.txt)
 
 Summary: A CSS Cascading Style Sheets library for Python
 
