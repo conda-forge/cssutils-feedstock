@@ -27,7 +27,7 @@ requirements:
     - tomli
   run:
     - python >={{ python_min }}
-    - more_itertools
+    - more-itertools
 
 test:
   requires:
