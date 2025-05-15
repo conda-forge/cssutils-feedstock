@@ -1,44 +1,54 @@
 {% set name = "cssutils" %}
-{% set version = "2.11.0" %}
-{% set sha256 = "cd24a30b9a848ca92d80f0d1b362139c0b69de31394d585dbf1b17a5dc4aa627" %}
+{% set version = "2.11.1" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  sha256: 0563a76513b6af6eebbe788c3bf3d01c920e46b3f90c8416738c5cfc773ff8e2
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: {{ PYTHON }} -m pip install . -vv
+  entry_points:
+    - csscapture=cssutils.scripts.csscapture:main
+    - csscombine=cssutils.scripts.csscombine:main
+    - cssparse=cssutils.scripts.cssparse:main
 
 requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools_scm >=6.4.2
+    - setuptools_scm >=3.4.1
+    - setuptools >=61.2
+    - tomli
   run:
     - python >={{ python_min }}
+    - more-itertools
 
 test:
   requires:
     - python {{ python_min }}
+    - pip
   imports:
     - cssutils
+  commands:
+    - pip check
+    - csscapture --help
+    - csscombine --help
+    - cssparse --help
 
 about:
-  home: http://cthedot.de/cssutils/
+  home: https://github.com/jaraco/cssutils
   license: LGPL-3.0-only
   license_file:
-    - COPYING
-    - COPYING.LESSER
-
+    - LICENSE
   summary: A CSS Cascading Style Sheets library for Python
 
 extra:
   recipe-maintainers:
     - vamega
+    - thewchan

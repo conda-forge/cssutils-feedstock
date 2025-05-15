@@ -3,7 +3,7 @@ About cssutils-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cssutils-feedstock/blob/main/LICENSE.txt)
 
-Home: http://cthedot.de/cssutils/
+Home: https://github.com/jaraco/cssutils
 
 Package license: LGPL-3.0-only
 
@@ -143,5 +143,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@thewchan](https://github.com/thewchan/)
 * [@vamega](https://github.com/vamega/)
 
