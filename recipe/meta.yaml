@@ -23,11 +23,12 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools_scm >=3.4.1
-    - setuptools >=61.2
-    - tomli
+    - setuptools >=77
+    - coherent.licensed
   run:
     - python >={{ python_min }}
     - more-itertools
+    - encutils
 
 test:
   requires:
