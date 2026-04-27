@@ -1,5 +1,5 @@
 {% set name = "cssutils" %}
-{% set version = "2.11.1" %}
+{% set version = "2.15.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0563a76513b6af6eebbe788c3bf3d01c920e46b3f90c8416738c5cfc773ff8e2
+  sha256: e9739237f3915037dacba787c4b58f280e3ec5d9864953e185bf23d40ff7d021
 
 build:
   noarch: python
