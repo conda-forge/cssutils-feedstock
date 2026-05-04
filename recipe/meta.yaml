@@ -1,5 +1,5 @@
 {% set name = "cssutils" %}
-{% set version = "2.11.1" %}
+{% set version = "2.14.0" %}
 
 package:
   name: {{ name }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 0563a76513b6af6eebbe788c3bf3d01c920e46b3f90c8416738c5cfc773ff8e2
+  sha256: c33256f0cbc215ad405b647117ace63c9e22af96fe42dcb7861742a591e6464c
 
 build:
   noarch: python
@@ -23,11 +23,12 @@ requirements:
     - python {{ python_min }}
     - pip
     - setuptools_scm >=3.4.1
-    - setuptools >=61.2
-    - tomli
+    - setuptools >=77
+    - coherent.licensed
   run:
     - python >={{ python_min }}
     - more-itertools
+    - encutils
 
 test:
   requires:
