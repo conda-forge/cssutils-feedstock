@@ -1,0 +1,63 @@
+schema_version: 1
+
+context:
+  name: cssutils
+  version: "2.15.0"
+
+package:
+  name: ${{ name }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: e9739237f3915037dacba787c4b58f280e3ec5d9864953e185bf23d40ff7d021
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+  python:
+    entry_points:
+      - csscapture=cssutils.scripts.csscapture:main
+      - csscombine=cssutils.scripts.csscombine:main
+      - cssparse=cssutils.scripts.cssparse:main
+
+requirements:
+  host:
+    - python ${{ python_min }}.*
+    - pip
+    - setuptools_scm >=3.4.1
+    - setuptools >=77
+    - coherent.licensed
+  run:
+    - python >=${{ python_min }}
+    - more-itertools
+    - encutils
+
+tests:
+  - python:
+      imports:
+        - cssutils
+      pip_check: true
+      python_version:
+        - ${{ python_min }}.*
+        - "*"
+  - requirements:
+      run:
+        - python ${{ python_min }}.*
+    script:
+      - csscapture --help
+      - csscombine --help
+      - cssparse --help
+
+about:
+  license: LGPL-3.0-only
+  license_file:
+    - LICENSE
+  summary: A CSS Cascading Style Sheets library for Python
+  homepage: https://github.com/jaraco/cssutils
+
+extra:
+  recipe-maintainers:
+    - vamega
+    - thewchan
